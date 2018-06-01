@@ -150,9 +150,25 @@ function largerThanTen(numbers) {
   }, []);
 }
 
+// function even(numbers) {
+//   // numbers is an array of numbers
+//   // return a new array that contains only even numbers from the input array
+//   return numbers.reduce((acc, item) =>  {
+//     const question = item % 2 === 0;
+//       if (question) {
+//         acc.push(item)
+//         return acc;
+//       }
+//     return acc;
+//   }, []);
+// }
+
 function even(numbers) {
   // numbers is an array of numbers
   // return a new array that contains only even numbers from the input array
+  return numbers.reduce((acc, item) =>
+    item % 2 === 0 ? [...acc, item] : acc
+  , []);
 }
 
 function findTheNeedle(words) {

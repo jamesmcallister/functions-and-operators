@@ -191,7 +191,7 @@ test("Cities", () => {
   expect(result).toEqual(expected);
 });
 
-test.only("Get numbers greater than 10", () => {
+test("Get numbers greater than 10", () => {
   const numbers = [4, 10, 32, 9, 21];
   const expected = [32, 21];
 
@@ -199,7 +199,7 @@ test.only("Get numbers greater than 10", () => {
   expect(output).toEqual(expected);
 });
 
-test("Get even numbers", () => {
+test.only("Get even numbers", () => {
   const numbers = [22, 13, 73, 82, 4];
   const expected = [22, 82, 4];
 
