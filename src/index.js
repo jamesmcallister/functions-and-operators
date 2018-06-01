@@ -308,6 +308,10 @@ function totalSales(sales) {
   // in the previous exercise. Add up all the sales figures
   // and return the total.
   // Hint: look up how to get the values of an object
+  // Object.keys(sales).map(x => console.log(sales[x]))
+  return Object.values(sales).reduce((acc, item) => {
+    return acc += item;
+  }, 0);
 }
 
 function walletSum(wallet) {
