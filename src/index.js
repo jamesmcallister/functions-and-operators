@@ -174,6 +174,7 @@ function even(numbers) {
 function findTheNeedle(words) {
   // words is an array of words
   // return the index of the word 'needle'
+  return words.findIndex(word => word === "needle");
 }
 
 function findLargest(numbers) {

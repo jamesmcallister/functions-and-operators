@@ -199,7 +199,7 @@ test("Get numbers greater than 10", () => {
   expect(output).toEqual(expected);
 });
 
-test.only("Get even numbers", () => {
+test("Get even numbers", () => {
   const numbers = [22, 13, 73, 82, 4];
   const expected = [22, 82, 4];
 
@@ -207,7 +207,7 @@ test.only("Get even numbers", () => {
   expect(output).toEqual(expected);
 });
 
-test("Find the needle", () => {
+test.only("Find the needle", () => {
   const words = ["house", "train", "slide", "needle", "book"];
   const expected = 3;
 
