@@ -227,7 +227,7 @@ function sortingCars(cars) {
   //
   // cars is an array of car objects. Sort them ascending by year and return
   // the sorted array.
-  return cars.sort((a, b) =>  {
+  return cars.slice().sort((a, b) =>  {
     return a.year - b.year;
   })
 }
@@ -257,12 +257,21 @@ function paintShop(cars, colour) {
   // passed in and return the new array
   // the original array passed in should not change
   // hint: look up 'Cloning objects in JavaScript'
+  return cars.map(item => {
+      if (item.make === "Ford") {
+        return Object.assign(item, {colour})
+      }
+    return item;
+  });
 }
 
 function secondLargest(numbers) {
   // numbers is an array of numbers
   // return the index of the second
   // largest number in the array
+  const sortedList = numbers.slice().sort((a, b) => a-b)
+  const secondLargest = sortedList[sortedList.length-2]
+    return numbers.indexOf(secondLargest);
 }
 
 function addSales(city, sales) {
