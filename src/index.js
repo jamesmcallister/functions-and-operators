@@ -46,9 +46,11 @@ function laxEquality(a, b) {
   return result;
 }
 
-function strictEqual() {
+function strictEqual(a, b, c) {
   // function is passed 3 arguments
   // return true if they are all strictly equal and false otherwise
+  const result = a === b && a === c;
+  return result;
 }
 
 function smaller() {
