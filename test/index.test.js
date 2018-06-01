@@ -429,7 +429,7 @@ test("Wallet sum", () => {
   expect(output).toEqual(195);
 });
 
-test.only("Wallet merge", () => {
+test("Wallet merge", () => {
   const output = walletMerge(
     {
       5: 2,
@@ -450,7 +450,7 @@ test.only("Wallet merge", () => {
   });
 });
 
-test("Array of wallets", () => {
+test.only("Array of wallets", () => {
   const output = arrayOfWallets([
     {
       5: 2,

@@ -350,6 +350,15 @@ function arrayOfWallets(wallets) {
   // wallets is an array of wallets
   // Return a new wallet object containing the notes from all wallets
   // the denominations used in this exercise are 5, 10 and 20
+  const allWallets = wallets.map(wallet => {
+    const currentWallet = Object.keys(wallet).reduce((acc, note) => {
+      const currentQuantity = wallet[note];
+      acc[note] = wallet[note];
+      return {...acc};
+    }, {});
+    return {...allWallets, currentWallet};
+  })
+  return allWallets;
 }
 
 function crazyMoney(wallets) {
