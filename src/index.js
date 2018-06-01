@@ -140,6 +140,13 @@ function largerThanTen(numbers) {
   // numbers is an array of numbers
   // return a new array that contains only numbers
   // from the input array which are greater than 10
+  return numbers.reduce((acc, item) => {
+    const question = item > 10;
+    if (question) {
+      return [...acc, item];
+    }
+    return acc;
+  }, []);
 }
 
 function even(numbers) {
