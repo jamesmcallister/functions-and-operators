@@ -68,17 +68,11 @@ function isDivisibleBy(divider1, divider2, number) {
   return result;
 }
 
-function evens() {
+function evens(a, b, c, d) {
   // this function is passed 4 numbers
   // return true if all numbers are even or false otherwise
   // do not use if/else or ternary
-  const result = [...arguments].reduce((acc, item) => {
-    // console.log({ cacc, item });
-    acc.push(acc % 2 === 0);
-    return acc;
-  }, []);
-  // console.log(result);
-  return result;
+  return a % 2 === 0 && b % 2 === 0 && c % 2 === 0 && d % 2 === 0;
 }
 
 function removeMiddle(words) {
