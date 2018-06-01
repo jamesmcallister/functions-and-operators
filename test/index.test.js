@@ -232,7 +232,7 @@ test("Add all numbers", () => {
   expect(output).toEqual(53);
 });
 
-test.only("Averages", () => {
+test("Averages", () => {
   const numbers = [4, "-", 8, 11, "hello", "57", 0, 2];
   const expected = 53;
 
@@ -241,7 +241,7 @@ test.only("Averages", () => {
   expect(output).toEqual(5);
 });
 
-test("Sorting strings", () => {
+test.only("Sorting strings", () => {
   const companies = [
     "netflix",
     "google",

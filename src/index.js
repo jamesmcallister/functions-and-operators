@@ -202,6 +202,7 @@ function averages(things) {
 function sortingStrings(strings) {
   // strings is an array of strings
   // sort them in alphabetical order and return the sorted array
+  return strings.sort();
 }
 
 function sortingNumbers(numbers) {
