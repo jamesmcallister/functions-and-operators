@@ -39,9 +39,11 @@ function exponential(a, b) {
   return result;
 }
 
-function laxEquality() {
+function laxEquality(a, b) {
   // this function is passed 2 arguments
   // return true if they are equal but not strictly equal
+  const result = a == b && a !== b;
+  return result;
 }
 
 function strictEqual() {
