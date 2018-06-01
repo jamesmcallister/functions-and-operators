@@ -104,6 +104,8 @@ function mapper(myArray) {
   // myArray is an array of numbers
   // return a new array which has all items in myArray incremented by one
   // myArray should remain unchanged
+  const result = myArray.map(x => x + 1);
+  return result;
 }
 
 function wordLengths(words) {
