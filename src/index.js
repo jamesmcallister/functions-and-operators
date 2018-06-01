@@ -72,6 +72,13 @@ function evens() {
   // this function is passed 4 numbers
   // return true if all numbers are even or false otherwise
   // do not use if/else or ternary
+  const result = [...arguments].reduce((acc, item) => {
+    // console.log({ cacc, item });
+    acc.push(acc % 2 === 0);
+    return acc;
+  }, []);
+  // console.log(result);
+  return result;
 }
 
 function removeMiddle(words) {
@@ -79,6 +86,9 @@ function removeMiddle(words) {
   // return a new array containing only the middle word
   // the words array should no longer contain the middle word
   // hint: splice
+  const halfWay = (words.length - 1) / 2;
+  const result = words.splice(halfWay, 1);
+  return result;
 }
 
 function get2ndAnd3rd(myArray) {
