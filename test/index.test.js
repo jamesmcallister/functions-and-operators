@@ -419,7 +419,7 @@ test("Total sales", () => {
   expect(output).toEqual(500);
 });
 
-test.only("Wallet sum", () => {
+test("Wallet sum", () => {
   const output = walletSum({
     5: 3,
     10: 8,
@@ -429,24 +429,24 @@ test.only("Wallet sum", () => {
   expect(output).toEqual(195);
 });
 
-test("Wallet merge", () => {
+test.only("Wallet merge", () => {
   const output = walletMerge(
     {
       5: 2,
       10: 3,
-      20: 1
+      20: 1,
     },
     {
       5: 4,
       10: 7,
-      20: 3
+      20: 3,
     }
   );
 
   expect(output).toEqual({
     5: 6,
     10: 10,
-    20: 4
+    20: 4,
   });
 });
 

@@ -339,6 +339,11 @@ function walletMerge(wallet1, wallet2) {
   // return a new wallet object containing the contents of
   // both wallets passed in.
   // the denominations used in this exercise are 5, 10 and 20
+  return Object.keys(wallet1).reduce((acc, note) => {
+    const walletContents = wallet1[note] + wallet2[note];
+    acc[note] = walletContents;
+    return acc;
+  }, {});
 }
 
 function arrayOfWallets(wallets) {
