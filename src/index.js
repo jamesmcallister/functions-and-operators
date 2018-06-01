@@ -208,6 +208,7 @@ function sortingStrings(strings) {
 function sortingNumbers(numbers) {
   // things is an array of sortingStrings
   // sort them in ascending order and return the sorted array
+  return numbers.sort((a, b) => a-b);
 }
 
 function sortingNumbersDescending(numbers) {

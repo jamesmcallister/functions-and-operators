@@ -241,7 +241,7 @@ test("Averages", () => {
   expect(output).toEqual(5);
 });
 
-test.only("Sorting strings", () => {
+test("Sorting strings", () => {
   const companies = [
     "netflix",
     "google",
@@ -264,7 +264,7 @@ test.only("Sorting strings", () => {
   expect(output).toEqual(expected);
 });
 
-test("Sorting numbers", () => {
+test.only("Sorting numbers", () => {
   const numbers = [99, -2, 0, 101, 2, 3, 22, 37, 1, -11];
   const expected = [-11, -2, 0, 1, 2, 3, 22, 37, 99, 101];
 
