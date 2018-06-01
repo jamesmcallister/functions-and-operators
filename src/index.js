@@ -116,6 +116,9 @@ function wordLengths(words) {
   // [ 'jupiter', 'mars', 'saturn' ]
   // output:
   // [ 7, 4, 6]
+  return words.reduce((acc, item) => {
+    return [...acc, item.length];
+  }, []);
 }
 
 function cities(capitals, formatter) {
