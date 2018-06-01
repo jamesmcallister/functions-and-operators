@@ -189,6 +189,14 @@ function averages(things) {
   // things is an array of numbers and strings
   // return the average of all the numbers
   // be sure to exclude the strings
+  const filteredItems = things.filter(item => typeof item === "number");
+
+  const total = filteredItems
+    .reduce((acc, item, current, source) => {
+      const result = acc += item;
+      return result;
+    }, 0);
+  return total / filteredItems.length;
 }
 
 function sortingStrings(strings) {
