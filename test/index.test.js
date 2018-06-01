@@ -41,7 +41,7 @@ test("Add", () => {
   expect(result).toEqual(5);
 });
 
-test.only("Multiply", () => {
+test("Multiply", () => {
   const result = multiply(4, 5, 3, 7);
 
   expect(result).toEqual(420);
@@ -87,7 +87,7 @@ test("Strict equal ", () => {
   expect(result4).toEqual(false);
 });
 
-test("Smaller", () => {
+test.only("Smaller", () => {
   const result1 = smaller(7, 7);
   expect(result1).toEqual(true);
 
