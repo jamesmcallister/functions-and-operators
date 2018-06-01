@@ -264,7 +264,7 @@ test("Sorting strings", () => {
   expect(output).toEqual(expected);
 });
 
-test.only("Sorting numbers", () => {
+test("Sorting numbers", () => {
   const numbers = [99, -2, 0, 101, 2, 3, 22, 37, 1, -11];
   const expected = [-11, -2, 0, 1, 2, 3, 22, 37, 99, 101];
 
@@ -273,7 +273,7 @@ test.only("Sorting numbers", () => {
   expect(output).toEqual(expected);
 });
 
-test("Sorting numbers descending", () => {
+test.only("Sorting numbers descending", () => {
   const numbers = [99, -2, 0, 101, 2, 3, 22, 37, 1, -11];
   const expected = [101, 99, 37, 22, 3, 2, 1, 0, -2, -11];
 
