@@ -227,6 +227,9 @@ function sortingCars(cars) {
   //
   // cars is an array of car objects. Sort them ascending by year and return
   // the sorted array.
+  return cars.sort((a, b) =>  {
+    return a.year - b.year;
+  })
 }
 
 function deleteColour(car) {
@@ -237,6 +240,8 @@ function deleteColour(car) {
   //   color: 'red'
   // }
   // delete the property colour and return car without this property
+  delete car.color;
+  return car;
 }
 
 function paintShop(cars, colour) {
