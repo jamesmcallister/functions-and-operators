@@ -161,7 +161,7 @@ test("Add 1 to each item in myArray", () => {
   expect(myArray).toEqual(unchanged);
 });
 
-test.only("Get word lengths", () => {
+test("Get word lengths", () => {
   const words = ["sun", "potato", "roundabout", "pizza"];
   const expected = [3, 6, 10, 5];
 
@@ -169,7 +169,7 @@ test.only("Get word lengths", () => {
   expect(output).toEqual(expected);
 });
 
-test("Cities", () => {
+test.only("Cities", () => {
   const capitals = [
     { city: "Paris", country: "France" },
     { city: "Madrid", country: "Spain" },
