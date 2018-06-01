@@ -282,7 +282,7 @@ test("Sorting numbers descending", () => {
   expect(output).toEqual(expected);
 });
 
-test.only("Sorting cars", () => {
+test("Sorting cars", () => {
   const cars = [
     {
       make: "tesla",
@@ -385,7 +385,7 @@ test("Second largest", () => {
   expect(output).toEqual(2);
 });
 
-test("Add sales", () => {
+test.only("Add sales", () => {
   const londonx = {
     london: 250,
     paris: 300,

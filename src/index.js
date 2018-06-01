@@ -224,7 +224,7 @@ function sortingCars(cars) {
   //   model: 'Fiesta',
   //   year: 1994
   // }
-  // 
+  //
   // cars is an array of car objects. Sort them ascending by year and return
   // the sorted array.
   return cars.slice().sort((a, b) =>  {
@@ -293,6 +293,14 @@ function addSales(city, sales) {
   // property and save the sales figure as its value.
 
   // return the updated globalSales object
+  // const newCity =
+  if (globalSales[city]) {
+    globalSales[city] = globalSales[city]+sales;
+  }
+  else {
+    globalSales[city] = sales;
+  }
+  return {...globalSales};
 }
 
 function totalSales(sales) {
