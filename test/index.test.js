@@ -349,7 +349,7 @@ test("Delete colour", () => {
   expect(output).toEqual(expected);
 });
 
-test.skip("Paint shop", () => {
+test.only("Paint shop", () => {
   const cars = [
     { make: "Ford", model: "Fiesta", colour: "Red" },
     { make: "Land Rover", model: "Defender", colour: "Muddy" },
@@ -357,14 +357,12 @@ test.skip("Paint shop", () => {
     { make: "Honda", model: "Civic", colour: "Yellow" }
   ];
 
-  // const unpaintedCars = [
-  //   { make: "Ford", model: "Fiesta", colour: "Red" },
-  //   { make: "Land Rover", model: "Defender", colour: "Muddy" },
-  //   { make: "Toyota", model: "Prius", colour: "Silver" },
-  //   { make: "Honda", model: "Civic", colour: "Yellow" }
-  // ];
-
-  const unpaintedCars = cars.slice();
+  const unpaintedCars = [
+    { make: "Ford", model: "Fiesta", colour: "Red" },
+    { make: "Land Rover", model: "Defender", colour: "Muddy" },
+    { make: "Toyota", model: "Prius", colour: "Silver" },
+    { make: "Honda", model: "Civic", colour: "Yellow" }
+  ];
 
   const repaintedCars = [
     { make: "Ford", model: "Fiesta", colour: "Pink" },
@@ -373,10 +371,10 @@ test.skip("Paint shop", () => {
     { make: "Honda", model: "Civic", colour: "Yellow" }
   ];
 
-  const output = paintShop(cars.slice(), "Pink");
+  const output = paintShop(cars, "Pink");
 
-  expect(output).toEqual(repaintedCars.slice());
-  expect(cars.slice()).toEqual(unpaintedCars.slice());
+  expect(output).toEqual(repaintedCars);
+  expect(cars).toEqual(unpaintedCars);
 });
 
 test("Second largest", () => {

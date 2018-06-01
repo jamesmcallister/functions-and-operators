@@ -259,7 +259,8 @@ function paintShop(cars, colour) {
   // hint: look up 'Cloning objects in JavaScript'
   return cars.map(item => {
       if (item.make === "Ford") {
-        return Object.assign(item, {colour})
+        // return Object.assign({}, item, {colour})
+        return {...item, colour};
       }
     return item;
   });
