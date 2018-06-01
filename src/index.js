@@ -35,9 +35,6 @@ function exponential() {
   // this function is passed 2 arguments
   // return first argument to the power of second argument
   // hint: you may need to look up the exponention operator
-  // const result = "";
-  // console.log(result);
-  // return result;
 }
 
 function laxEquality() {
