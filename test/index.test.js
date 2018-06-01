@@ -282,7 +282,7 @@ test("Sorting numbers descending", () => {
   expect(output).toEqual(expected);
 });
 
-test.skip("Sorting cars", () => {
+test.only("Sorting cars", () => {
   const cars = [
     {
       make: "tesla",
@@ -318,14 +318,14 @@ test.skip("Sorting cars", () => {
       year: 1994
     },
     {
-      make: "tesla",
-      model: "roadster",
-      year: 2020
-    },
-    {
       make: "toyota",
       model: "prius",
       year: 2011
+    },
+    {
+      make: "tesla",
+      model: "roadster",
+      year: 2020
     }
   ];
   const output = sortingCars(cars);
@@ -349,7 +349,7 @@ test("Delete colour", () => {
   expect(output).toEqual(expected);
 });
 
-test.only("Paint shop", () => {
+test("Paint shop", () => {
   const cars = [
     { make: "Ford", model: "Fiesta", colour: "Red" },
     { make: "Land Rover", model: "Defender", colour: "Muddy" },

@@ -224,7 +224,7 @@ function sortingCars(cars) {
   //   model: 'Fiesta',
   //   year: 1994
   // }
-  //
+  // 
   // cars is an array of car objects. Sort them ascending by year and return
   // the sorted array.
   return cars.slice().sort((a, b) =>  {
