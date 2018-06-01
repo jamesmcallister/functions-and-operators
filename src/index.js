@@ -31,10 +31,12 @@ function remainder(a, b) {
   return result;
 }
 
-function exponential() {
+function exponential(a, b) {
   // this function is passed 2 arguments
   // return first argument to the power of second argument
   // hint: you may need to look up the exponention operator
+  const result = a ** b;
+  return result;
 }
 
 function laxEquality() {
