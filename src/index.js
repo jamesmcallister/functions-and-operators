@@ -141,11 +141,12 @@ function largerThanTen(numbers) {
   // return a new array that contains only numbers
   // from the input array which are greater than 10
   return numbers.reduce((acc, item) => {
-    const question = item > 10;
-    if (question) {
-      return [...acc, item];
-    }
-    return acc;
+    // const question = item > 10;
+    // if (question) {
+    //   return [...acc, item];
+    // }
+    // return acc;
+    return item > 10 ? [...acc, item] : acc;
   }, []);
 }
 
