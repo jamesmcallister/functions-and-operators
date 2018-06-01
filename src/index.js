@@ -16,18 +16,28 @@ function multiply() {
 function average() {
   // this function is passed 5 heights in meters
   // calculate their average and return it
+  const result = [...arguments].reduce((acc, item) => {
+    return (acc += item);
+  }, 0);
+
+  return result / arguments.length;
 }
 
-function remainder() {
+function remainder(a, b) {
   // this function is passed 2 arguments
   // return the remainder of first
   // argument when divided by the second
+  const result = a % b;
+  return result;
 }
 
 function exponential() {
   // this function is passed 2 arguments
   // return first argument to the power of second argument
   // hint: you may need to look up the exponention operator
+  // const result = "";
+  // console.log(result);
+  // return result;
 }
 
 function laxEquality() {
