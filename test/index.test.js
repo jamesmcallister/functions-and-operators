@@ -87,7 +87,7 @@ test("Strict equal ", () => {
   expect(result4).toEqual(false);
 });
 
-test.only("Smaller", () => {
+test("Smaller", () => {
   const result1 = smaller(7, 7);
   expect(result1).toEqual(true);
 
@@ -98,7 +98,7 @@ test.only("Smaller", () => {
   expect(result3).toEqual("smaller");
 });
 
-test("Is divisible by", () => {
+test.only("Is divisible by", () => {
   const result1 = isDivisibleBy(9, 4, 36);
   expect(result1).toEqual(true);
 

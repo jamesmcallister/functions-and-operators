@@ -64,6 +64,8 @@ function smaller(a, b) {
 function isDivisibleBy(divider1, divider2, number) {
   // if number is divisible by divider1 or divider2 return true or false otherwise
   // do not use if/else or ternary
+  const result = number % divider1 === 0 || number % divider2 === 0;
+  return result;
 }
 
 function evens() {
