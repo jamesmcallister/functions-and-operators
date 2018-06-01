@@ -180,6 +180,9 @@ function findLargest(numbers) {
 function addAllnumbers(numbers) {
   // numbers is an array of numbers
   // return the sum of all the numbers in the array
+  return numbers.reduce((acc, item) => {
+    return acc += item;
+  }, 0)
 }
 
 function averages(things) {
