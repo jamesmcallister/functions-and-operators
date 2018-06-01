@@ -408,7 +408,7 @@ test("Add sales", () => {
   expect(barcelonaOutput).toEqual(barcelonax);
 });
 
-test.only("Total sales", () => {
+test("Total sales", () => {
   const output = totalSales({
     london: 200,
     paris: 100,
@@ -419,7 +419,7 @@ test.only("Total sales", () => {
   expect(output).toEqual(500);
 });
 
-test("Wallet sum", () => {
+test.only("Wallet sum", () => {
   const output = walletSum({
     5: 3,
     10: 8,

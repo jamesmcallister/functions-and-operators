@@ -328,6 +328,11 @@ function walletSum(wallet) {
   // calculate the sum of money in the wallet and return
   // the total.
   // the denominations used in this exercise are 5, 10 and 20
+  return Object.keys(wallet).reduce((acc, note) => {
+    const quantity = wallet[note]
+    const total = note * quantity;
+    return acc += total;
+  }, 0);
 }
 
 function walletMerge(wallet1, wallet2) {
